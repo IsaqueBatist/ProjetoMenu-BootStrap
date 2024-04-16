@@ -6,6 +6,8 @@
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
   <!--Css BootStrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Css quantity box-->
+  <link rel="stylesheet" href="assets/css/quantitybox.css">
   <title>Menu-BootStrap</title>
 </head>
 <body>
@@ -88,7 +90,12 @@
                   </div>
                   <ul class="list-group list-group-flush text-center ">
                     <li class="list-group-item text-success fw-bold">R$ 30,00</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item"><div class="quantity buttons_added p-2">
+                      <input type="button" value="-" class="minus">
+                      <input type="number" step="1" min="1" max="" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="" id="Carne de Panela" data-price="22">
+                      <input type="button" value="+" class="plus">
+                    </div></li>
                   </ul>  
                 </div>
               </div>
@@ -101,7 +108,12 @@
                   </div>
                   <ul class="list-group list-group-flush text-center ">
                     <li class="list-group-item text-success fw-bold">R$ 25,00</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item"><div class="quantity buttons_added p-2">
+              <input type="button" value="-" class="minus">
+              <input type="number" step="1" min="1" max="" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="" id="Carne de Panela" data-price="22">
+              <input type="button" value="+" class="plus">
+            </div></li>
                   </ul>
                 </div>
               </div>
@@ -114,7 +126,12 @@
                   </div>
                   <ul class="list-group list-group-flush text-center ">
                     <li class="list-group-item text-success fw-bold">R$ 22,00</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item"><div class="quantity buttons_added p-2">
+              <input type="button" value="-" class="minus">
+              <input type="number" step="1" min="1" max="" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="" id="Carne de Panela" data-price="22">
+              <input type="button" value="+" class="plus">
+            </div></li>
                   </ul>
                 </div>
               </div>
@@ -145,7 +162,12 @@
                  </div>
                  <ul class="list-group list-group-flush text-center ">
                    <li class="list-group-item text-success fw-bold">R$ 10,00</li>
-                   <li class="list-group-item">A third item</li>
+                   <li class="list-group-item"><div class="quantity buttons_added p-2">
+              <input type="button" value="-" class="minus">
+              <input type="number" step="1" min="1" max="" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="" id="Carne de Panela" data-price="22">
+              <input type="button" value="+" class="plus">
+            </div></li>
                  </ul>  
                </div>
              </div>
@@ -158,7 +180,12 @@
                  </div>
                  <ul class="list-group list-group-flush text-center ">
                    <li class="list-group-item text-success fw-bold">R$ 8,00</li>
-                   <li class="list-group-item">A third item</li>
+                   <li class="list-group-item"><div class="quantity buttons_added p-2">
+              <input type="button" value="-" class="minus">
+              <input type="number" step="1" min="1" max="" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="" id="Carne de Panela" data-price="22">
+              <input type="button" value="+" class="plus">
+            </div></li>
                  </ul>
                </div>
              </div>
@@ -171,7 +198,12 @@
                  </div>
                  <ul class="list-group list-group-flush text-center ">
                    <li class="list-group-item text-success fw-bold">R$ 12,00</li>
-                   <li class="list-group-item">A third item</li>
+                   <li class="list-group-item"><div class="quantity buttons_added p-2">
+              <input type="button" value="-" class="minus">
+              <input type="number" step="1" min="1" max="" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="" id="Carne de Panela" data-price="22">
+              <input type="button" value="+" class="plus">
+            </div></li>
                  </ul>
                </div>
              </div>
@@ -193,21 +225,28 @@
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label">Telefone</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="(11) 11111-1111">
+          <input type="text" class="form-control" id="iphone" placeholder="(11) 11111-1111">
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label">Email</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ex@gmail.com">
+          <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="ex@gmail.com">
         </div>
       </form>
      </div>
      <div class="d-grid gap-2 col-6 mx-auto mt-4">
-      <button class="btn btn-secondary">Enviar</button>
-
+      <button class="btn btn-secondary" type="button">Calcular</button>
     </div>
   </main>
 
   <!--JS BootStrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!--Jquary-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+  <!--Mascara-->
+  <script src="assets/js/quantitybox.js"></script>
+  <script type="text/javascript">
+    $("#iphone").mask("(00) 00000-0000")
+  </script>
 </body>
 </html>
